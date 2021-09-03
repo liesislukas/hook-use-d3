@@ -1,0 +1,12 @@
+{
+  "name": "hook-use-d3",
+  "version": "1.0.0",
+  "description": "Helper hook to render d3 inside jsx",
+  "main": "index.js",
+  "repository": "https://github.com/liesislukas/hook-use-d3",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukas Liesis",
+  "license": "MIT"
+}
