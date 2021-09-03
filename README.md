@@ -11,7 +11,18 @@ import * as d3 from "d3";
 import useD3 from "hook-use-d3";
 
 export default function SomeComponent() {
-  const d3ref = useD3((svg) => {
+  const d3ref = useD3((d3Container, dom) => {
+    const svg = d3Container
+      .append("svg")
+      .attr("width", dom.getBoundingClientRect().width)
+      .attr("height", dom.getBoundingClientRect().height)
+      .call(
+        d3.zoom().on("zoom", function (event) {
+          svg.attr("transform", event.transform);
+        })
+      )
+      .append("g");
+
     const circle = svg
       .append("circle")
       .attr("cx", 50)
