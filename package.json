@@ -1,6 +1,6 @@
 {
   "name": "hook-use-d3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper hook to render d3 inside jsx",
   "main": "index.js",
   "repository": "https://github.com/liesislukas/hook-use-d3",
