@@ -6,7 +6,7 @@ export default (renderFunction, dependencies) => {
 
   React.useEffect(() => {
     if (ref.current) {
-      renderFunction(d3.select(ref.current));
+      renderFunction(d3.select(ref.current), ref.current);
     }
     return () => {};
   }, [...dependencies, ref.current]);
